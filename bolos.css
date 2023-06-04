@@ -1,0 +1,297 @@
+:root {
+  --pink: #e84393;
+  --bg-color: #fff;
+  --main-color: #e55472;
+  --h2-font: 2.3rem;
+  --text-color: #010101;
+  --p-font: 1.3rem;
+  --big-font: 5rem;
+  --other-color: #666666;
+  --2nd-color: #434343;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+body {
+  height: 200vh;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;
+}
+
+header span {
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0 1.5rem;
+  color: #666;
+}
+
+#estouAqui {
+  padding-bottom: .3rem;
+  border-bottom: .2rem solid #e84393;
+  color: var(--pink);
+}
+
+header .navbar a:hover {
+  color: var(--pink);
+  padding-bottom: .3rem;
+  border-bottom: .2rem solid #e84393;
+}
+
+header .icones a {
+  font-size: 2.5rem;
+  color: #333;
+  margin-left: 1.5rem;
+}
+
+header .icones a:hover {
+  color: var(--pink);
+}
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: #333;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.center-text {
+  color: black;
+}
+.new-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  
+  text-align: center;
+}
+
+.row {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999999;
+}
+
+.row img {
+  width: 450px;
+  height: 550px;
+  margin-bottom: 10px;
+}
+
+.row h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: all .50s ease;
+}
+
+.row h4:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.row h5 {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+}
+.esgotado {
+ position: absolute;
+ top: 2px;
+ left: 0px;
+ height: 40px;
+ width: 110px;
+ color: var(--bg-color);
+ background-color: #333;
+ font-size: 14px;
+ font-weight: 500;
+ text-transform: uppercase;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
+.novo-produto {
+  margin-top: 5rem;
+}
+.home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30vh;
+   }
+  
+   .home .content h3 {
+     font-size: 6rem;
+     color: #999999;
+     padding-top: 50px;
+   }
+  
+   
+
+.row .bbtn a {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  text-transform:none;
+  background-color: rgba(0,0,0, 0.8);
+  color: var(--bg-color);
+  transition: opacity 0.5s;
+  opacity: 0;
+  width: 360px;
+}
+.row:hover .bbtn a {
+  opacity: 1;
+}
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2.5rem;
+  margin-top: 17rem;
+  padding-top: 10rem;
+  padding-top: 10rem;
+  background-color: #272829;
+}
+
+.contact-box h4 {
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  color: var(--bg-color);
+  cursor: default;
+}
+
+.contact-box li {
+  margin-bottom: 12px;
+  list-style: none;
+}
+
+.contact-box li a {
+  display: block;
+  color: #999999;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+
+.contact-box li a:hover {
+  transform: translateX(-7px);
+  color: var(--main-color);
+}
+
+.contact-box h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #999999;
+  cursor: default;
+}
+
+.social {
+  display: flex;
+  margin-top: 1.8rem;
+}
+
+.social i {
+  height: 37px;
+  width: 37px;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 1.1rem;
+  color: var(--main-color);
+  transition: all .50s ease;
+}
+
+.social i:hover {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  transform: scale(1.1);
+}
+
+.end-text p {
+  text-align: center;
+  background-color: #272829;
+  color: var(--other-color);
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 20px;
+  padding-top: 5rem;
+  cursor: default;
+}
+
+.fixed-whats {
+  position: fixed;
+  bottom: 9rem;
+  right: 2.3rem;
+}
+
+.fixed-whats i {
+  background-color: #1ab30d;
+  color: var(--bg-color);
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 30px;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 2.3rem;
+  right: 2.3rem;
+}
+
+.scroll-top i {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 30px;
+}
